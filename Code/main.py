@@ -95,9 +95,6 @@ while True:
     signal_4_density = len(list)
     logic.logic(signal_1_density, signal_2_density, signal_3_density, signal_4_density)
 
-    if not(signal_1_density > 20 and  signal_2_density > 20 and signal_3_density > 20 and signal_4_density >20):
-        time.wait(30)
-
     cv2.imshow("RGB", frame)
     if cv2.waitKey(1)&0xFF==27:
         break
